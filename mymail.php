@@ -2,7 +2,6 @@
 include_once("sendmail.php");
 $from=$_POST["from"]  ;
 $mailto = $_POST["mail"];
-echo $mailto
 if($from == "subscribe") {
         $m= new Mail; // create the mail
         #$m->From( $mailto );
