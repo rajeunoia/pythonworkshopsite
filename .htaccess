@@ -1,2 +1,6 @@
 RewriteEngine on
 RewriteRule home$ home.html
+RewriteRule ppw01$ https://www.meraevents.com/event/python-programming-workshop
+RewriteRule IntrotoProgramming$ workshops/intro_to_programming.html
+RewriteRule PythonProgramming$ workshops/python_programming.html
+RewriteRule AdvancedPython$ workshops/advanced_python.html
