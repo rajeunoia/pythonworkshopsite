@@ -2,6 +2,7 @@ RewriteEngine on
 
 RewriteRule home$ home.html
 RewriteRule ppw01$ https://www.meraevents.com/event/python-programming-workshop
+RewriteRule 3daysWorkshop$ http://%{HTTP_HOST}%1/workshops/3days_workshop.html
 RewriteRule IntrotoProgramming$ http://%{HTTP_HOST}%1/workshops/intro_to_programming.html
 RewriteRule PythonProgramming$ http://%{HTTP_HOST}%1/workshops/python_programming.html
 RewriteRule AdvancedPython$ http://%{HTTP_HOST}%1/workshops/advanced_python.html
