@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="ext/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="ext/bootstrap/css/bootstrap-tour.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="ext/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,7 +52,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Programing is part of basic education, Don't get left behind.</h1>
+            <h1 class="mb-5">Programing is your key to IT CAREER, Don't get left behind.</h1>
           </div>
           <div class="col-md-10 col-lg-6 col-xl-5 mx-auto">
             <!--<form action="http://pythonworkshops.com/register"> --> 
@@ -82,7 +83,7 @@
                 <i class="icon-layers m-auto text-primary"></i>
               </div>
               <h3>Hands on Python Programming</h3>
-              <p class="lead mb-0">Learn Python with a hands on real world examples, assignments and Project. </p>
+              <p class="lead mb-0">You will be able to write programs/college assignments in Python on your own. </p>
               <p class="lead mb-0"><a class="btn btn-primary" href="PythonProgramming"><b>Know more</b></a> </p>
             </div>
           </div>
@@ -92,8 +93,8 @@
                 <i class="icon-check m-auto text-primary"></i>
               </div>
               <h3>Advanced Python</h3>
-              <p class="lead mb-0">Get ready to learn Python to build end to end application. </p>
-              <p class="lead mt-5"><a class="btn btn-primary" href="AdvancedPython"><b>Know more</b></a> </p>
+              <p class="lead mb-0">You can start solving real world problems/projects by building python based solutions. </p>
+              <p class="lead mt-2"><a class="btn btn-primary" href="AdvancedPython"><b>Know more</b></a> </p>
             </div>
           </div>
         </div>
@@ -106,7 +107,37 @@
         </div>
       </div>
     </section>
-      
+    
+    <!-- Upcoming Workshops  -->
+    <section id="calendar" class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+
+          <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+            <h5 class="mb-4 mt-3">Upcoming Workshops</h5>
+            <p class="lead mb-0">
+                <a class="btn btn-block btn-info mb-2" href="../register" target="_blank" >Jan 19, 20, 21, 2018 9:00 AM*</a>
+
+                <a class="btn btn-block btn-warning mb-2" href="../register" target="">Jan 26, 27, 28, 2018 9:00 AM</a>
+                
+                <a class="btn btn-block btn-warning mb-2" href="../register" target="_blank">Feb 2, 3, 4, 2018 9:00 AM</a>
+                
+                <a class="btn btn-block btn-info mb-2" href="../register" target="_blank">Feb 9, 10, 11, 2018 9:00 AM*</a>
+                
+                <a class="btn btn-block btn-warning mb-2" href="../register" target="_blank">Feb 16, 17, 18, 2018 9:00 AM</a>
+                
+                *Online Sessions
+               
+
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-1 text-white showcase-img wsimg" style="background-image: url(' img/Upcoming-workshops.png');">
+          </div>
+        </div>
+        
+        </div>
+    </section>
 
     <!-- Image Showcases -->
     <section class="showcase">
@@ -135,9 +166,12 @@
         </div>
       </div>
     </section>
+      
+      
+
 
      <!-- Workshop Benefits -->
-    <section class="call-to-action text-white">
+    <section id="benefits" class="call-to-action text-white">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -217,13 +251,13 @@
     </section>
 
     <!-- Experts -->
-    <section class="testimonials text-center bg-light">
+    <section id="experts" class="testimonials text-center bg-light">
       <div class="container">
         <h2 class="mb-5">Experts - Workshop</h2>
         <div class="row">
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/expert-1.png" alt="expert1">
+              <img class="img-fluid rounded-circle mb-3" src="img/Raja.png" alt="expert1">
               <h5>Raja Sekhar</h5>
               <p class="font-weight-light mb-0">10 years of Programming Experience</p>
                 <a href="https://www.linkedin.com/in/rajsekharcs" target="_blank">
@@ -243,7 +277,7 @@
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/expert-1.png" alt="expert3">
+              <img class="img-fluid rounded-circle mb-3" src="img/Ram_Mohan.png" alt="expert3">
               <h5>Ram Mohan Chalam</h5>
               <p class="font-weight-light mb-1">15 Years of Experience in IT Industry</p>
               <a href="https://www.linkedin.com/in/ram-mohan-chalam-551ab24/" target="_blank">
@@ -306,6 +340,41 @@
     <script src="ext/jquery/jquery.min.js"></script>
     <script src="ext/jquery/common.js"></script>
     <script src="ext/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="ext/bootstrap/js/bootstrap-tour.js"></script>
+    <script>
+        // Instance the tour
+    var tour = new Tour({
+      steps: [
+      {
+        element: "#workshops",
+        title: "List of workshops ",
+        content: "We offer 3 different workshops that will be a right fit as per your stage of programming."
+      },
+      {
+        element: "#calendar",
+        title: "Next upcoming workshops",
+        content: "Register to workshops as per your location and availability. (Online or Offline)"
+      },
+      {
+        element: "#benefits",
+        title: "What do you get from workshops ? ",
+        content: "Feel free to reach us for more details"
+      },
+      {
+        element: "#experts",
+        title: "Know the Experts ? ",
+        content: "They are not trainers, they are from real corporate world."
+      }
+    ]});
+
+    // Initialize the tour
+    tour.init();
+
+    // Start the tour
+    tour.start();
+      
+      
+      </script>
    
   
     </body>
