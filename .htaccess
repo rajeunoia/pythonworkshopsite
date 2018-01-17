@@ -9,3 +9,4 @@ RewriteRule PythonProgramming$ http://%{HTTP_HOST}%1/workshops/python_programmin
 RewriteRule AdvancedPython$ http://%{HTTP_HOST}%1/workshops/advanced_python.html [NC]
 RewriteRule Participants$ http://%{HTTP_HOST}%1/workshop_participants.html [NC]
 RewriteRule calendar$ http://%{HTTP_HOST}%1/#workshops [NC]
+RewriteRule pricing$ http://%{HTTP_HOST}%1/pricing.html [NC]
