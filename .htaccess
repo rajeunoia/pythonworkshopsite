@@ -10,3 +10,4 @@ RewriteRule AdvancedPython$ http://%{HTTP_HOST}%1/workshops/advanced_python.html
 RewriteRule Participants$ http://%{HTTP_HOST}%1/workshop_participants.html [NC]
 RewriteRule calendar$ http://%{HTTP_HOST}%1/#workshops [NC]
 RewriteRule pricing$ http://%{HTTP_HOST}%1/pricing.html [NC]
+RewriteRule privacy$ http://%{HTTP_HOST}%1/privacy.html [NC]
